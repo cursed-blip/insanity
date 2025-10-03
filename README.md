@@ -59,3 +59,4 @@ This project is released under a license of your choice (see `LICENSE`).
 
 * For educational and personal use only.
 * Do **not** use this tool in unauthorized environments.
+* i copilot to go over the code and fix some errors i did,i did not use ai to make the code
