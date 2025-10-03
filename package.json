@@ -1,0 +1,36 @@
+{
+  "name": "insanity",
+  "version": "0.1.0",
+  "main": "insanity.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^24.8.8",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourname.insanity",
+    "productName": "Insanity",
+    "files": [
+      "insanity.js",
+      "preload.js",
+      "assets/**",
+      "node_modules/**"
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "**/*.node"
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
